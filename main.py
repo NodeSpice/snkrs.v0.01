@@ -23,11 +23,12 @@ class SnkrBot:
             .click()
         sleep(4)
         # Press 'In Stock' based on Full xPath Address using Inspect
+        # self.driver.find_element_by_xpath("/html/body/div[2]/div/div/div[1]/div/div[3]/div[1]/header/div/div/div/div/div[2]/div/nav/ul/li[3]/a/div")\
         self.driver.find_element_by_xpath("/html/body/div[2]/div/div/div[1]/div/div[3]/div[1]/header/div/div/div/div[1]/div[2]/div/nav/ul/li[2]/a/div")\
             .click()
         sleep(3)
         # Choose Shoe based on the name in Alt attribute
-        self.driver.find_element_by_xpath("//img[@alt=\" LeBron 17 'Graffiti' Release Date\"]")\
+        self.driver.find_element_by_xpath("//img[@alt=\"Space Hippie 02 - Volt 'This is Trash' Release Date\"]")\
             .click()
         sleep(1)
         # Choose Shoe based on the name in class attribute and the text being the size I want
@@ -35,7 +36,7 @@ class SnkrBot:
             .click()
         sleep(3)
         # Choose Shoe based on the name in class attribute and the text 'Add to Cart'
-        self.driver.find_element_by_xpath("//button[@class='ncss-brand ncss-btn-black pb3-sm prl5-sm pt3-sm u-uppercase u-full-width' and contains(., 'ADD TO CART')]")\
+        self.driver.find_element_by_xpath("//button[@class='ncss-brand ncss-btn-black pb3-sm prl5-sm pt3-sm u-uppercase u-full-width' and contains(., 'BUY $150')]")\
             .click()   
         sleep(4)
 
